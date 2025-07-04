@@ -56,9 +56,9 @@ conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=
 
 conda install -c conda-forge gcc_linux-64=11 gxx_linux-64=11
 
-pip install torch-scatter torch-sparse torch-geometric -f # https://data.pyg.org/whl/torch-1.12.1+cu113.html
+pip install torch-scatter torch-sparse torch-geometric # -f https://data.pyg.org/whl/torch-1.12.1+cu113.html
 pip install ninja
-functorch==0.2.1 numba open3d opencv-python trimesh torchfile 
+
 ```
 
 * install package
@@ -68,6 +68,8 @@ git clone https://github.com/Jarrome/Uni-Fusion.git && cd Uni-Fusion
 python setup.py install
 # install cuda function, this may take several minutes, please use `top` or `ps` to check
 python uni/ext/__init__.py
+
+pip install numba open3d opencv-python trimesh 
 ```
 
 * train a uni encoder from nothing in 1 second
