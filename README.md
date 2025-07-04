@@ -51,9 +51,14 @@
 conda create -n uni python=3.8
 conda activate uni
 
-conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
-pip install torch-scatter torch-sparse torch-geometric -f https://data.pyg.org/whl/torch-1.12.1+cu113.html
-pip install ninja functorch==0.2.1 numba open3d opencv-python trimesh torchfile 
+conda install cuda -c nvidia/label/cuda-11.8.0
+conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+
+conda install -c conda-forge gcc_linux-64=11 gxx_linux-64=11
+
+pip install torch-scatter torch-sparse torch-geometric -f # https://data.pyg.org/whl/torch-1.12.1+cu113.html
+pip install ninja
+functorch==0.2.1 numba open3d opencv-python trimesh torchfile 
 ```
 
 * install package
