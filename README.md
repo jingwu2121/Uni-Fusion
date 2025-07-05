@@ -48,8 +48,8 @@
       
 * Create env
 ```bash
-conda create -n uni python=3.8
-conda activate uni
+conda create -n unifusion python=3.10
+conda activate unifusion
 
 conda install cuda -c nvidia/label/cuda-11.8.0
 conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=11.8 -c pytorch -c nvidia
