@@ -65,6 +65,7 @@ pip install ninja
 ```bash
 git clone https://github.com/Jarrome/Uni-Fusion.git && cd Uni-Fusion
 # install uni package
+pip install numpy==1.26.4
 python setup.py install
 # install cuda function, this may take several minutes, please use `top` or `ps` to check
 python uni/ext/__init__.py
